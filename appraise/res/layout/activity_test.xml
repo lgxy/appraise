@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".TestVideoViewActivity" >
+
+    <LinearLayout
+        android:id="@+id/temp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/test_pasue_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停/播放" />
+
+        <Button
+            android:id="@+id/test_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止" />
+
+        <Button
+            android:id="@+id/test_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一首" />
+    </LinearLayout>
+
+    <com.appraise.widget.VideoPlayer
+        android:id="@+id/test_video_player"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/temp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/tset_video_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/temp" >
+
+        <SurfaceView
+            android:id="@+id/test_surface_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</RelativeLayout>
