@@ -68,7 +68,7 @@ public class MainActivity extends BaseActivity {
 //		super.onConfigurationChanged(newConfig);
 	}
 	
-	//ABC+123
+	//TEST1
 	
 	
 //	@Override
